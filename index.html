@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ANEEMA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d0839">
+<meta name="description" content="Uncensored anime roleplay. Install ANEEMA on your phone.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ANEEMA">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icons/app-icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=RocknRoll+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="fx scan"></div>
+<div class="fx grain"></div>
+<div class="fx vig"></div>
+
+<iframe id="frameEl" class="frame" title="ANEEMA" allow="clipboard-write; fullscreen; autoplay" allowfullscreen></iframe>
+
+<div class="shell" id="shellEl">
+  <div class="card">
+    <div class="card__tile"><img class="card__ico" src="icons/icon-512.png" alt="ANEEMA"></div>
+    <h1 class="card__name">ANEEMA</h1>
+    <p class="card__sub" id="subEl">Uncensored anime roleplay</p>
+
+    <div class="spin" id="spinEl"><span></span><span></span><span></span></div>
+    <p class="card__msg" id="msgEl">Opening ANEEMA&hellip;</p>
+
+    <div class="fallback" id="fallbackEl" hidden>
+      <p class="fallback__txt">This frame could not load ANEEMA. Tap below - it opens the same app.</p>
+      <button class="btn primary" id="launchBtn" type="button">LAUNCH ANEEMA</button>
+      <button class="btn ghost" id="pageBtn" type="button">OPEN THE PERCHANCE PAGE</button>
+    </div>
+
+    <div class="install" id="installEl" hidden>
+      <button class="btn primary" id="installBtn" type="button">INSTALL ON THIS PHONE</button>
+      <p class="install__hint" id="installHintEl"></p>
+    </div>
+
+    <p class="card__foot">18+ &middot; Uncensored &middot; Your chats stay on your device</p>
+  </div>
+</div>
+
+<button class="corner" id="escapeBtn" type="button" title="Open ANEEMA outside this frame" aria-label="Open ANEEMA outside this frame">&#8599;</button>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
